@@ -13,7 +13,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    GinkgoMiuiCamera \
     NoCutoutOverlay \
     NotchBarKiller
 
@@ -151,15 +150,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
-
-# FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
-
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl
 
 # Freeform Windows
 PRODUCT_COPY_FILES += \
@@ -461,3 +451,15 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+    
+# OpenGapps
+GAPPS_VARIANT := pico
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+GAPPS_PRODUCT_PACKAGES += CalendarGooglePrebuilt
+GAPPS_PRODUCT_PACKAGES += LatinImeGoogle
+GAPPS_PRODUCT_PACKAGES += Maps
+GAPPS_PRODUCT_PACKAGES += PrebuiltGmail
+GAPPS_PRODUCT_PACKAGES += YouTube
+GAPPS_EXCLUDED_PACKAGES := GoogleTTS
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)   
