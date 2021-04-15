@@ -26,6 +26,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="ginkgo-user 10 QKQ1.200114.002 V12.0.2.0 QCOMIXM release-keys"
+    PRIVATE_BUILD_DESC="willow-user 10 QKQ1.200114.002 V12.0.3.0.QCXMIXM release-keys"
 
-BUILD_FINGERPRINT := xiaomi/ginkgo/ginkgo:10/QKQ1.200114.002/V12.0.2.0.QCOMIXM:user/release-keys
+BUILD_FINGERPRINT := xiaomi/willow/willow:10/QKQ1.200114.002/V12.0.3.0.QCXMIXM:user/release-keys
