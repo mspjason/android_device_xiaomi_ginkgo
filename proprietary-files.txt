@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI 21.6.9 China Beta package, unless pinned
+# Device proprietary files - from ginkgo MIUI 21.6.16 China Beta package, unless pinned
 
 # ADSP - from LA.UM.9.11.r1-03200-NICOBAR.0
 vendor/bin/adsprpcd|c8a45eb83a6d70dcbcc1b8ec574391b49e8ca8b9
@@ -31,6 +31,10 @@ vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|d9f24646f315c7e8918966ca7101
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|384e626e393aa647bc63592fda36ab0475d27b5b
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|bfb13c00bef9355a0f0f54dc6773a4d14b7eaf95
+
+# ANT+
+vendor/lib/com.dsi.ant@1.0.so
+vendor/lib64/com.dsi.ant@1.0.so
 
 # Audio
 system_ext/etc/permissions/audiosphere.xml
